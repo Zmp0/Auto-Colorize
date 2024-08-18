@@ -1,0 +1,21 @@
+#!/bin/bash
+
+random_colorize() {
+    local COLORS=("31" "32" "33" "34" "35" "36" "37")
+    awk -v colors="${COLORS[*]}" '
+    BEGIN {
+        split(colors, colorArray, " ")
+        srand()
+    }
+    {
+        n = split($0, words, " ")
+        for (i = 1; i <= n; i++) {
+            color = colorArray[int(rand() * length(colorArray)) + 1]
+            printf "\033[1;%sm%s\033[0m ", color, words[i]
+        }
+        printf "\n"
+    }'
+}
+
+# Call the function to be used as a pipe
+random_colorize
