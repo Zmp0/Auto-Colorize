@@ -15,7 +15,7 @@
    It can be installed with the command down below
 
    ```bash
-   git clone https://github.com/Zmp0/Auto-Colorize.git && cd Auto-Colorize && sudo mv color /usr/local/bin && chmod +x /usr/local/bin/color
+   git clone https://github.com/Zmp0/Auto-Colorize.git && cd Auto-Colorize && sudo cp color /usr/local/bin && sudo chmod +x /usr/local/bin/color
     ```
 
 ### After installing the script, all the output of the first command, is gonna be colorized
