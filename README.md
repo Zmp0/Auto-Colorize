@@ -17,4 +17,5 @@
 2. **Make the Script Executable**:
 
    ```bash
-   chmod +x color
+   git clone https://github.com/Zmp0/Auto-Colorize.git && cd Auto-Colorize && sudo mv color /usr/local/bin && chmod +x /usr/local/bin/color
+
