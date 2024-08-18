@@ -25,7 +25,12 @@ For Example:
 
 ```bash
 ls | color 
+```
 
+```bash
 cat somefile.txt | color
+```
 
+```bash
 echo Hello World | color
+```
