@@ -18,4 +18,15 @@
 
    ```bash
    git clone https://github.com/Zmp0/Auto-Colorize.git && cd Auto-Colorize && sudo mv color /usr/local/bin && chmod +x /usr/local/bin/color
+    ```
+
+### After installing the script, all the output of the first command, is gonna be colorized
+
+For Example:
+
+
+```bash
+ls | color 
+
+cat somefile.txt | color
 
