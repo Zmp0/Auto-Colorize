@@ -12,9 +12,7 @@
 
 1. **Download the Script**:
 
-   Download the `color` script from the repository or create a new file and copy the script content into it.
-
-2. **Make the Script Executable**:
+   It can be installed with the command down below
 
    ```bash
    git clone https://github.com/Zmp0/Auto-Colorize.git && cd Auto-Colorize && sudo mv color /usr/local/bin && chmod +x /usr/local/bin/color
@@ -30,3 +28,4 @@ ls | color
 
 cat somefile.txt | color
 
+echo Hello World | color
