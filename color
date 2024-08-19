@@ -8,12 +8,8 @@ random_colorize() {
         srand()
     }
     {
-        n = split($0, words, " ")
-        for (i = 1; i <= n; i++) {
-            color = colorArray[int(rand() * length(colorArray)) + 1]
-            printf "\033[1;%sm%s\033[0m ", color, words[i]
-        }
-        printf "\n"
+        color = colorArray[int(rand() * length(colorArray)) + 1]
+        printf "\033[1;%sm%s\033[0m\n", color, $0
     }'
 }
 
